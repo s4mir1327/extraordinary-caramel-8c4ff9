@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO ===== -->
+  <title>Sameer Razza | Full Stack Developer</title>
+  <meta name="description" content="Sameer Razza — Computer Science Engineering undergraduate and aspiring Full Stack Web Developer in Bengaluru, building web applications with Core Java, HTML, CSS, and JavaScript." />
+  <meta name="keywords" content="Sameer Razza, Full Stack Developer, Java, Spring Boot, React, Computer Science, Bengaluru, Portfolio, Resume" />
+  <meta name="author" content="Sameer Razza" />
+  <meta name="theme-color" content="#0a1628" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sameer Razza | Full Stack Developer" />
+  <meta property="og:description" content="Computer Science Engineering undergraduate building web applications with Core Java, HTML, CSS, and JavaScript." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Sameer Razza | Full Stack Developer" />
+  <meta name="twitter:description" content="Computer Science Engineering undergraduate building web applications with Core Java, HTML, CSS, and JavaScript." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="logo" aria-label="Sameer Razza — home">
+        <span class="logo-mark" aria-hidden="true">SR</span>
+        <span class="logo-text">Sameer Razza</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode">
+          <!-- Sun (shown in dark mode) -->
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <!-- Moon (shown in light mode) -->
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="icon-btn hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <p class="hero-location">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Bengaluru, Karnataka
+          </p>
+          <h1 id="hero-title">Hi, I'm <span class="accent-text">Sameer Razza</span></h1>
+          <p class="hero-title">Computer Science Engineering Undergraduate <span class="sep" aria-hidden="true">|</span> Aspiring Full Stack Web Developer</p>
+          <p class="hero-tagline">Building web applications with <strong>Core Java</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a href="resume.pdf" class="btn btn-ghost" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download Resume
+            </a>
+          </div>
+        </div>
+
+        <!-- Decorative code card -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-dots"><span></span><span></span><span></span></div>
+<pre><code><span class="c-kw">public class</span> <span class="c-cls">Sameer</span> {
+  <span class="c-kw">String</span> role = <span class="c-str">"Full Stack Dev"</span>;
+  <span class="c-kw">String</span>[] stack = {
+    <span class="c-str">"Java"</span>, <span class="c-str">"Spring Boot"</span>,
+    <span class="c-str">"React"</span>, <span class="c-str">"MySQL"</span>
+  };
+  <span class="c-kw">boolean</span> learning = <span class="c-lit">true</span>;
+}</code></pre>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section"><span></span></a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Get to know me</p>
+          <h2 id="about-title">About Me</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Computer Science Engineering student with good academic performance and knowledge of programming,
+              web development, and databases. Looking for an opportunity to apply my skills, learn new technologies,
+              and gain practical experience in the IT industry.
+            </p>
+          </div>
+
+          <ul class="about-facts">
+            <li class="fact-card reveal">
+              <span class="fact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+              </span>
+              <div>
+                <h3>Area of Interest</h3>
+                <p>Full Stack Web Development</p>
+              </div>
+            </li>
+            <li class="fact-card reveal">
+              <span class="fact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </span>
+              <div>
+                <h3>Languages Known</h3>
+                <p>English, Kannada, Hindi, Bhojpuri</p>
+              </div>
+            </li>
+            <li class="fact-card reveal">
+              <span class="fact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M4.93 4.93c4.08 4.08 10.06 4.08 14.14 0M4.93 19.07c4.08-4.08 10.06-4.08 14.14 0"/></svg>
+              </span>
+              <div>
+                <h3>Hobbies</h3>
+                <p>Sports and Travelling</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">What I work with</p>
+          <h2 id="skills-title">Skills</h2>
+        </header>
+
+        <h3 class="sub-heading reveal">Technical Skills</h3>
+        <ul class="skills-grid">
+          <!-- data-level drives the animated progress bar (percentage) -->
+          <li class="skill-card reveal" data-level="75">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+              </span>
+              <div>
+                <h4>Core Java</h4>
+                <p>Object-oriented programming</p>
+              </div>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-label="Core Java proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><span></span></div>
+          </li>
+          <li class="skill-card reveal" data-level="85">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 3l1.5 17L12 22l6.5-2L20 3H4z"/><path d="M8 7h8l-.5 5h-6l.3 3 2.2.7 2.2-.7.1-1"/></svg>
+              </span>
+              <div>
+                <h4>HTML</h4>
+                <p>Web page structure</p>
+              </div>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-label="HTML proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><span></span></div>
+          </li>
+          <li class="skill-card reveal" data-level="80">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+              </span>
+              <div>
+                <h4>CSS</h4>
+                <p>Styling, responsive design</p>
+              </div>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-label="CSS proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"><span></span></div>
+          </li>
+          <li class="skill-card reveal" data-level="60">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M10 9v6a2 2 0 0 1-2 2M17 9h-2a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2"/></svg>
+              </span>
+              <div>
+                <h4>JavaScript</h4>
+                <p>Basic scripting</p>
+              </div>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-label="JavaScript proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"><span></span></div>
+          </li>
+          <li class="skill-card reveal" data-level="70">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </span>
+              <div>
+                <h4>MySQL</h4>
+                <p>Database queries</p>
+              </div>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-label="MySQL proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"><span></span></div>
+          </li>
+          <li class="skill-card reveal" data-level="70">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="9" r="3"/><path d="M6 9v6M18 12c0 3-4 3-9 4.5"/></svg>
+              </span>
+              <div>
+                <h4>Git &amp; GitHub</h4>
+                <p>Version control</p>
+              </div>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-label="Git and GitHub proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"><span></span></div>
+          </li>
+        </ul>
+
+        <h3 class="sub-heading reveal">Interpersonal Skills</h3>
+        <ul class="tag-cloud reveal">
+          <li class="tag">Communication</li>
+          <li class="tag">Teamwork</li>
+          <li class="tag">Adaptability</li>
+          <li class="tag">Problem-Solving</li>
+          <li class="tag">Positive Attitude</li>
+          <li class="tag">Willingness to Learn</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Things I've built</p>
+          <h2 id="projects-title">Projects</h2>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-head">
+              <span class="project-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </span>
+              <h3>Crowd Funding</h3>
+            </div>
+            <p>
+              A platform that helps small startups get funding through a voting system. People vote on startups,
+              and those with more votes receive more funding. Supports creating campaigns, managing users, and
+              tracking donations.
+            </p>
+            <ul class="tech-tags" aria-label="Tech stack">
+              <li>React.js</li><li>Java</li><li>Spring Boot</li><li>MySQL</li>
+            </ul>
+            <div class="project-links">
+              <!-- TODO: replace # with real repository / demo URLs -->
+              <a href="#" class="btn btn-sm btn-outline" aria-label="Crowd Funding source code on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="btn btn-sm btn-primary" aria-label="Crowd Funding live demo">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-head">
+              <span class="project-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </span>
+              <h3>Smart Energy Management System</h3>
+            </div>
+            <p>
+              A system to monitor, manage, and optimize real-time energy consumption for efficient power usage.
+            </p>
+            <ul class="tech-tags" aria-label="Tech stack">
+              <li>Java</li><li>Spring Boot</li><li>React.js</li><li>MySQL</li>
+            </ul>
+            <div class="project-links">
+              <!-- TODO: replace # with real repository / demo URLs -->
+              <a href="#" class="btn btn-sm btn-outline" aria-label="Smart Energy Management System source code on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="btn btn-sm btn-primary" aria-label="Smart Energy Management System live demo">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <!-- Cards are rendered from the `achievements` array in script.js -->
+    <section class="section section-alt" id="achievements" aria-labelledby="achievements-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Certificates &amp; recognition</p>
+          <h2 id="achievements-title">Achievements</h2>
+        </header>
+
+        <ul class="achievements-grid" id="achievements-grid"></ul>
+
+        <noscript>
+          <ul class="achievements-fallback">
+            <li><a href="certificates/DSA%20BOOTCAMP%20PARTICIPATION%20CERTIFICATE%202026.pdf">DSA Bootcamp Participation Certificate 2026</a></li>
+            <li><a href="certificates/Project%20Complition%20-%20Sameer%20razza.pdf">Project Completion Certificate</a></li>
+            <li><a href="certificates/Sameer%20razza%20-%20AIML%20Certificate.pdf">AIML Certificate</a></li>
+            <li><a href="certificates/STUDENT%20COORDINATOR%20CERTIFICATE%20-%20DSA%20FOR%20DEEPTECH.pdf">Student Coordinator Certificate – DSA for DeepTech</a></li>
+          </ul>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section section-alt" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">My academic journey</p>
+          <h2 id="education-title">Education</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-date">2023 – 2027</span>
+              <h3>Bachelor of Engineering in Computer Science &amp; Engineering</h3>
+              <p class="timeline-org">Anjuman Institute of Technology and Management, Bhatkal</p>
+              <p class="timeline-score">CGPA: <strong>7.95</strong></p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-date">2022</span>
+              <h3>Pre-University Education (PCM)</h3>
+              <p class="timeline-org">Yamuna Singh College, Saran, Bihar</p>
+              <p class="timeline-score">Percentage: <strong>69.67%</strong></p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-date">2020</span>
+              <h3>Secondary School Education</h3>
+              <p class="timeline-org">Paramount Academy, Muzaffarpur, Bihar</p>
+              <p class="timeline-score">Percentage: <strong>56.67%</strong></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Let's talk</p>
+          <h2 id="contact-title">Contact Me</h2>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="contact-intro">
+              I'm open to internships, entry-level roles, and collaboration on interesting projects.
+              Feel free to reach out — I'd love to hear from you.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>
+                <div><span class="contact-label">Email</span><a href="mailto:samm19058@gmail.com">samm19058@gmail.com</a></div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <div><span class="contact-label">Phone</span><a href="tel:+917079409346">+91 7079409346</a></div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></span>
+                <div><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/sameer-razza-158a10257" target="_blank" rel="noopener noreferrer">sameer-razza-158a10257</a></div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <div><span class="contact-label">Location</span><span>Bengaluru, Karnataka</span></div>
+              </li>
+            </ul>
+
+            <div class="socials" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/sameer-razza-158a10257" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <!-- TODO: replace # with GitHub profile URL -->
+              <a href="#" class="social-btn" aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="mailto:samm19058@gmail.com" class="social-btn" aria-label="Send an email">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Netlify Forms: detected at deploy time via data-netlify="true" -->
+          <form class="contact-form reveal" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="visually-hidden">
+              <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+            </p>
+
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+              <span class="btn-label">Send Message</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Sameer Razza. All rights reserved.</p>
+      <a href="#home" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- ===== PDF VIEWER MODAL ===== -->
+  <dialog class="pdf-modal" id="pdf-modal" aria-labelledby="pdf-modal-title">
+    <div class="pdf-modal-inner">
+      <div class="pdf-modal-head">
+        <h3 id="pdf-modal-title">Certificate</h3>
+        <div class="pdf-modal-actions">
+          <a href="#" class="btn btn-sm btn-outline" id="pdf-modal-open" target="_blank" rel="noopener">Open in new tab</a>
+          <button type="button" class="icon-btn" id="pdf-modal-close" aria-label="Close viewer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="pdf-modal-body">
+        <iframe id="pdf-modal-frame" title="Certificate preview"></iframe>
+        <div class="pdf-fallback" id="pdf-fallback" hidden>
+          <p>Sorry, this PDF couldn't be displayed here.</p>
+          <a href="#" class="btn btn-primary" id="pdf-fallback-link" target="_blank" rel="noopener">Open the PDF directly</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
